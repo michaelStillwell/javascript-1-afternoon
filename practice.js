@@ -18,7 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(nam) {
+  if ( nam === "Tyler" ) {
+    return true;
+  } else if ( nam !== "Tyler" ) {
+    return false;
+  }
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -29,7 +35,10 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function getName() {
+  let theName = prompt("Your Name");
+  return theName;
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -42,7 +51,9 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function welcome() {
+  alert("Welcome, " + getName());
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -52,7 +63,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+// Parameters are the 'variables' that a given function asks for, and arguments are the values of the parameters given
 
 ////////// PROBLEM 5 //////////
 
@@ -62,7 +73,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+// null, undefined, 0, "", NAN, false. You can check if something is falsy using a conditional for comparison.
 
 ////////// PROBLEM 6 //////////
 
@@ -72,7 +83,9 @@ var name = 'Tyler';
 
 //Code Here
   
-
+function myName() {
+  return "L";
+}
 
 /*
   Now save the function definition of myName into a new variable called newMyName
@@ -80,7 +93,7 @@ var name = 'Tyler';
 
 //Code Here
 
-
+let newMyName = myName;
 
 /*
   Now alert the result of invoking newMyName
@@ -88,7 +101,7 @@ var name = 'Tyler';
 
 // Code Here
 
-
+alert( newMyName );
 
 ////////// PROBLEM 7 //////////
 
@@ -98,7 +111,9 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function outerFn() {
+  return myName;
+}
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
@@ -106,10 +121,11 @@ var name = 'Tyler';
 
 //Code Here
 
-
+let innerFn = outerFn();
 
 /* 
   Now invoke innerFn.
 */
 
 // Code Here
+innerFn;
